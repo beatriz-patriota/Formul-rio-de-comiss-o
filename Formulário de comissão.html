@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css" />
+  </head>
+  <header>
+    <h1>Formulário de comissão</h1>
+  </header>
+  <body>
+    <section class="esq">
+      <div>
+        Inserir informações:
+      </div>
+      <div>
+        Nome:
+        <input type="text" id="nom" />
+      </div>
+      <div>
+        Idade:
+        <input type="number" id="ida" />
+      </div>
+      <div>
+        Comissão: (R$)
+        <input type="number" id="com" />
+      </div>
+      <div>
+        <input type="button" value="Adicionar" onclick="Adicionar()" />
+      </div>
+      <div>
+          Após inserir as informações de todos os funcionários, clique no botão abaixo:
+      </div>
+      <div>
+          <input type="button" value="Finalizar" onclick="Finalizar()">
+      </div>
+    </section>
+    <aside class="lateral">
+        <div>
+            Resultado de todas as comissões e de quem obteve maior:
+        </div>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Idade</th>
+              <th>Comissão</th>
+            </tr>
+          </thead>
+          <tbody id = resultado>                                  
+          </tbody>
+        </table>
+        <div>
+            A maior comissão foi:
+        </div>
+      </div>
+      <div id ="maior">
+      </div>
+      <div>
+        A menor comissão foi:
+      </div>
+      <div id = "menor"> </div>
+    </aside>
+  </body>
+  <script src="form.js"></script>
+</html>
